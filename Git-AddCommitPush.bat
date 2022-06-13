@@ -5,6 +5,10 @@ echo.
 echo.
 
 git add .
+
+echo.
+echo.
+echo.
 set /p MsnCommit= "Commit Message: "
 echo.
 echo.

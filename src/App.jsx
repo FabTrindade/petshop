@@ -5,11 +5,15 @@ import './assets/css/base/base.css'
 import Home from './paginas/Home'
 import Pagina404 from './paginas/Pagina404'
 import Sobre from './paginas/Sobre'
+import Cabecalho from './paginas/cabecalho'
+
+
 
 function App() {
 
   return (
     <Router>
+      <Cabecalho />
       <Switch>
         <Route exact path='/'>
           <Home />
