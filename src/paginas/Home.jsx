@@ -1,4 +1,5 @@
 import React from 'react'
+import ListaPost from '../component/ListaPost'
 
 const Home = () => {
 
@@ -7,8 +8,7 @@ const Home = () => {
       <div className="container">
         <h2 className="titulo-pagina">Pet notícias</h2>
       </div>
-      
-
+      <ListaPost url={'/posts'}/>
     </main>
   )
 }

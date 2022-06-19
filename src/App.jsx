@@ -5,7 +5,7 @@ import './assets/css/base/base.css'
 import Home from './paginas/Home'
 import Pagina404 from './paginas/Pagina404'
 import Sobre from './paginas/Sobre'
-import Cabecalho from './component/cabecalho'
+import Cabecalho from './component/Cabecalho'
 
 
 
