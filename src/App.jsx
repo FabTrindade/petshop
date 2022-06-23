@@ -7,6 +7,8 @@ import Pagina404 from './paginas/Pagina404'
 import Sobre from './paginas/Sobre'
 import Cabecalho from './component/Cabecalho'
 import Post from './paginas/Post'
+import ListaCategoria from './component/ListaCategorias'
+import Categoria from './paginas/Categoria'
 
 
 
@@ -21,6 +23,9 @@ function App() {
         </Route>
         <Route path='/sobre'>
           <Sobre />
+        </Route>
+        <Route path='/categoria/:id'>
+          <Categoria />
         </Route>
         <Route path='/posts/:id'>
           <Post />
