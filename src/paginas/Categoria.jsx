@@ -1,10 +1,11 @@
 import React from 'react'
-import { Route, useParams } from 'react-router-dom'
+import { Route, useParams, useRouteMatch } from 'react-router-dom'
 import '../assets/css/blog.css'
 import ListaCategoria from '../component/ListaCategorias'
 import ListaPost from '../component/ListaPost'
 
 const Categoria = () => {
+    const { path } = useRouteMatch();
     const { id } = useParams()
     return (
         <>
@@ -12,11 +13,8 @@ const Categoria = () => {
                 <h2 className="titulo-pagina">Pet Notícias</h2>
             </div>
             <ListaCategoria />
-            <Route exact path={'/categoria/bem-estar'}>
+            <Route exact path={`${path}/`}>
                 <ListaPost url={`/posts?categoria=${id}`} />
-            </Route>
-            <Route exact path={'/categoria/comportamento'}>
-                <ListaPost url={`/posts?categoria=${id}`}/>
             </Route>
         </>
     )
