@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import ListaPost from '../component/ListaPost';
 
 const SubCategoria = () =>{
-    const {subCategoria} = useParams
+    const {subcategoria} = useParams()
     return (
-        <ListaPost url={`/posts?categoria=${subCategoria}`} />
+        <ListaPost url={`/posts?subcategoria=${subcategoria}`} />
     )
 }
 
